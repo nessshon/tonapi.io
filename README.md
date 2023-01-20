@@ -1,5 +1,5 @@
 ## Tonapi.io
-Python wrapper for [tonapi](https://tonapi.io/swagger-ui/).\
+Python wrapper for [tonapi.io](https://tonapi.io/swagger-ui/).\
 You need an api key to use it, get it here [telegram-bot](https://tonapi_bot.t.me/)
 
 ### Installation
@@ -18,7 +18,6 @@ from tonapi import Tonapi
 from tonapi.utils import nano_to_amount
 
 
-# Declaring asynchronous function for using await
 def main():
     # Creating new Tonapi object
     tonapi = Tonapi(api_key="Your api key")
@@ -80,7 +79,6 @@ from tonapi import Tonapi
 from tonapi.utils import nano_to_amount
 
 
-# Declaring asynchronous function for using await
 def main():
     # Creating new Tonapi object
     tonapi = Tonapi(api_key="Your api key")
@@ -115,7 +113,6 @@ Search for NFT items in the wallet using filters:
 from tonapi import Tonapi
 
 
-# Declaring asynchronous function for using await
 def main():
     # Creating new Tonapi object
     tonapi = Tonapi(api_key="Your api key")
@@ -146,7 +143,6 @@ Get all NFT items from collection by collection address:
 from tonapi import Tonapi
 
 
-# Declaring asynchronous function for using await
 def main():
     # Creating new Tonapi object
     tonapi = Tonapi(api_key="Your api key")
@@ -172,7 +168,7 @@ if __name__ == '__main__':
 And more . . .\
 \
 \
-**Buy Me a Coffee**\
+**Buy Me a Coffee:**\
 <a href="https://app.tonkeeper.com/transfer/EQC-3ilVr-W0Uc3pLrGJElwSaFxvhXXfkiQA3EwdVBHNNess"><img src="https://telegra.ph//file/8e0ac22311be3fa6f772c.png" width="55"/></a>
 <a href="https://tonhub.com/transfer/EQC-3ilVr-W0Uc3pLrGJElwSaFxvhXXfkiQA3EwdVBHNNess"><img src="https://telegra.ph//file/7fa75a1b454a00816d83b.png" width="55"/></a>\
 ```EQC-3ilVr-W0Uc3pLrGJElwSaFxvhXXfkiQA3EwdVBHNNess```
