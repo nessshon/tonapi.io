@@ -34,13 +34,13 @@ class Sale(BaseModel):
 
 
 class ImagePreview(BaseModel):
-    resolution: str
-    url: str
+    resolution: None | str
+    url: None | str
 
 
 class NftItemRepr(BaseModel):
     address: address
-    approved_by: list[str]
+    approved_by: None | list[str]
     collection: None | Collection
     dns: None | str
     index: int
