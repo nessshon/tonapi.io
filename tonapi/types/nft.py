@@ -46,7 +46,7 @@ class NftItemRepr(BaseModel):
     index: int
     metadata: dict
     owner: None | AccountAddress
-    previews: None | ImagePreview
+    previews: None | list[ImagePreview]
     sale: None | Sale
     verified: bool
 
