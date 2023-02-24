@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tonapi.io",
-    version="0.0.6",
+    version="0.0.7",
     author="nessshon",
     description="TON API. Provide access to indexed TON blockchain.",
     long_description=long_description,
