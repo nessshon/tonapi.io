@@ -1,12 +1,12 @@
-from ..client import AsyncTonapiClient
+from ..client import TonapiClient
 
 from ...constants import Method
 from ...types.trace import TraceMsg, AnnotatedTraceMsg
 
 
-class Trace(AsyncTonapiClient):
+class Trace(TonapiClient):
 
-    async def get_trace(self, hash_: str) -> TraceMsg:
+    def get_trace(self, hash_: str) -> TraceMsg:
         """Get the trace by trace ID or hash of any transaction in trace.
 
         :param hash_: trace ID or transaction hash in hex (without 0x)
@@ -14,11 +14,11 @@ class Trace(AsyncTonapiClient):
         :return: :class:`TraceMsg` object
         """
         params = {'hash': hash_}
-        response = await self._request(Method.trace.getTrace, params)
+        response = self._request(Method.trace.getTrace, params)
 
         return TraceMsg(**response)
 
-    async def get_annotated_trace(self, hash_: str) -> AnnotatedTraceMsg:
+    def get_annotated_trace(self, hash_: str) -> AnnotatedTraceMsg:
         """Get the annotated trace by trace ID or hash of any transaction in trace.
 
         :param hash_: trace ID or transaction hash in hex (without 0x)
@@ -26,6 +26,6 @@ class Trace(AsyncTonapiClient):
         :return: :class:`AnnotatedTraceMsg` object
         """
         params = {'hash': hash_}
-        response = await self._request(Method.trace.getAnnotatedTrace, params)
+        response = self._request(Method.trace.getAnnotatedTrace, params)
 
         return AnnotatedTraceMsg(**response)

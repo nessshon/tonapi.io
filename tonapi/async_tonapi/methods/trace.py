@@ -1,7 +1,7 @@
 from ..client import AsyncTonapiClient
 
-from ..constants import Method
-from ..types.trace import TraceMsg, AnnotatedTraceMsg
+from ...constants import Method
+from ...types.trace import TraceMsg, AnnotatedTraceMsg
 
 
 class Trace(AsyncTonapiClient):

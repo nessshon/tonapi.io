@@ -10,7 +10,7 @@ class Url:
 @dataclass
 class Method:
     class oauth:
-        getToken = "v1/oauth/getToken"
+        getToken = "/v1/oauth/getToken"
 
     class account:
         getBulkInfo = "/v1/account/getBulkInfo"
@@ -49,3 +49,7 @@ class Method:
 
     class system:
         time = "/v1/system/time"
+
+    class trace:
+        getAnnotatedTrace = "/v1/trace/getAnnotatedTrace"
+        getTrace = "/v1/trace/getTrace"

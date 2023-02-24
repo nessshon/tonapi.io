@@ -9,6 +9,7 @@ from .methods.nft import NFT
 from .methods.oauth import OAuth
 from .methods.subscription import Subscription
 from .methods.system import System
+from .methods.trace import Trace
 
 
 class Tonapi(TonapiClient):
@@ -54,3 +55,7 @@ class Tonapi(TonapiClient):
     @property
     def system(self) -> System:
         return System(self._api_key, self._testnet)
+
+    @property
+    def trace(self) -> Trace:
+        return Trace(self._api_key, self._testnet)
